@@ -17,7 +17,7 @@ public class CustomerService {
     private String line = "";
     public void saveData(){
         try {
-            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\a237938\\Documents\\SalesCustomer.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Documents\\SalesCustomer.csv"));
             while((line=br.readLine())!=null){
                 String [] data = line.split(",");
                 Customer c = new Customer();
